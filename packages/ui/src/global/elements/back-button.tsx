@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 const BackButton = (className?: any) => {
 	const router = useRouter();
@@ -18,7 +18,7 @@ const BackButton = (className?: any) => {
 			className={cn('not-prose text-sm', className)}
 			onClick={handleBackButtonClick}
 		>
-			<ArrowLeftIcon className="w-4 mr-2" />
+			<ArrowLeftIcon className="mr-2 w-4" />
 			<span>Go Back</span>
 		</Button>
 	);

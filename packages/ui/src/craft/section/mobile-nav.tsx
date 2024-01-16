@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation';
 
 // Utility Imports
 import { Menu, ArrowRightSquare } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 // Component Imports
 import { Button } from '@/components/ui/button';
@@ -26,7 +26,7 @@ export function MobileNav() {
 			<SheetTrigger asChild>
 				<Button
 					variant="ghost"
-					className="px-0 border w-10 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+					className="w-10 border px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
 				>
 					<Menu />
 					<span className="sr-only">Toggle Menu</span>
